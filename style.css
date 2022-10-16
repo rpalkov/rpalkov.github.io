@@ -97,12 +97,12 @@ body{
 
     }
     .title h1 {
-     bottom: 30%;
+     bottom: 32%;
      padding: 20px 10px;
     }
 
     .title p {
-        bottom: 45%;
+        bottom: 50%;
         padding: 5px 10px;
     }
 }
