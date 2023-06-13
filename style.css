@@ -1,0 +1,130 @@
+.body {
+    margin: 0;
+    padding:0;
+}
+
+
+
+
+body {
+ background-image: linear-gradient(white,  black);
+ z-index: 1
+
+}
+
+
+
+/*NAVBAR*/
+
+nav {
+    background-color: #0c0c0c;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    color: #555;
+}
+
+/*LOGO*/
+
+
+
+    .logo-container {
+        display: flex;
+        margin-top: 240px;
+        justify-content: center;
+        align-items: center;
+        animation: fade-in 2s forwards;
+        margin-bottom: 240px;
+        
+        }
+    
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+    
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+
+        /* NEXT SECTION arrow*/
+
+            .arrow-container {
+                position: fixed;
+                bottom: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 }
+        
+            .arrow-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border: solid  rgb(106, 59, 184);
+                border-width: 0 5px 5px 0;
+                transform: rotate(45deg);
+                border-radius: 4px;
+            }
+        
+            .arrow-link:hover {
+            opacity: .7;
+            }
+        
+            .arrow-link.hide{
+            display: none;
+            }
+
+
+
+        #next-section {
+            height: 1000px;
+        }
+
+        .project-title {
+            padding-top: 120px;
+            color:#ffffff;
+            text-align: center;
+            font-size: 3rem;
+        }
