@@ -1,15 +1,8 @@
-.body {
-    margin: 0;
-    padding:0;
-}
-
-
-
-
 body {
- background-image: linear-gradient(white,  black);
- z-index: 1
-
+    margin: 0px;
+    padding:0px;
+    background-image: linear-gradient(white, black);
+    z-index: 1;
 }
 
 
@@ -17,11 +10,9 @@ body {
 /*NAVBAR*/
 
 nav {
-    background-color: #0c0c0c;
+    background-color:#222121;
     justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -44,7 +35,7 @@ a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
 }
@@ -59,11 +50,11 @@ a:hover {
 
     .logo-container {
         display: flex;
-        margin-top: 240px;
         justify-content: center;
         align-items: center;
         animation: fade-in 2s forwards;
-        margin-bottom: 240px;
+        height: 100vh;
+        
         
         }
     
@@ -117,14 +108,42 @@ a:hover {
             }
 
 
+            /*PROJECT SECTION*/
 
         #next-section {
-            height: 1000px;
+            height:100vh;
         }
 
         .project-title {
-            padding-top: 120px;
+            padding-top: 2%;
             color:#ffffff;
             text-align: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
+        }
+
+        #project-1 {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 50%;
+            height: 50%;
+            border: solid 5px black;
+        }
+
+
+
+        /* Mobile */
+
+       
+            #next-section  { @media screen and (max-width: 768px) {
+                
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo-container {
+                height: 80vh;
+                
+
+            }
         }
