@@ -18,3 +18,18 @@ window.addEventListener('scroll', function () {
         arrowLink.classList.add('hide');
     }
 });
+
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: {
+            value: '#ffffff' // Set the specific color with RGB values
+        },
+        shape: { type: 'circle', stroke: { width: 0, color: '#000000' } },
+        opacity: { value: 0.5, random: false, anim: { enable: false } },
+        size: { value: 3, random: true, anim: { enable: false } },
+        line_linked: { enable: true, distance: 150, color: '#000000', opacity: 0.4, width: .5 },
+        move: { enable: true, speed: 6, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+    },
+    // ... other configurations
+});
