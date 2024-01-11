@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding:0px;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) );
+    background: #F2F5F9;
     z-index: 1;
     height: 100%;
     scroll-behavior: smooth;
@@ -35,7 +35,7 @@ li {
 a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
+    color: #000000;
     font-size: 22px;
     font-weight: bold;
     padding: 10px;
@@ -129,8 +129,9 @@ a:hover {
             justify-content:center;
             align-items: center;
             animation: fade-in 2s forwards;
-            height: 50vh;
+            height: 45vh;
             padding-top: 5%;;
+
 
         }
 
@@ -139,7 +140,8 @@ a:hover {
             height: auto;
             max-height: 500px;
             border-radius: 10px;
-            box-shadow: 0 5px 8px rgba(0.6, 0.6, 0.6, 0.6);
+            box-shadow: 0 5px 8px rgba(0.9, 0.9, 0.9, 0.9);
+            
 
         }
 
@@ -148,64 +150,57 @@ a:hover {
             margin: 0 auto;
             padding: 2%;
             width:45%;
-            height: 1px;
             font-size: 1.3rem;
             animation: bounce 2s 2;
+            background: #FFFFFF;
+            border-radius: 15px;
     
             
         }
 
         /* INFO CHART*/
-                  .chart-container {
-                      max-width: 800px;
-                      margin: 0 auto;
-                      background-color: rgba(255, 255, 255, 0.2);
-                      padding: 20px;
-                      border-radius: 8px;
-                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                      
-                  }
+        .chart-container {
+            display: flex;
+           flex-wrap: wrap;
+            height: 20vh;
+            justify-content: space-between;
+            max-width: 70%;
+            margin: 0 auto;
+
+          
+          
+               
+        }
+
+        .description_title {
+            width: 50%;
+            text-align: center;
+            font-size: 2.2rem;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
         
-                  .timeline {
-                      display: flex;
-                      flex-direction: row;
-                      flex-wrap: wrap;     
-                      justify-content: space-between;                
-                      
-                  }
-        
-                  .year {
-                      width: 100px;
-                      padding: 10px;
-                      background-color: #08278d;
-                      color: #fffefe;
-                      text-align: center;
-                      border-radius: 4px;
-                      margin-right: 10px;
-                      margin-bottom: 10px;
-                      margin-left: 2%;
-                    font-size: 40px;
-                   
-                      
-                  }
-        
-                  .description {
-                      flex: 1;
-                      max-width: 600px;
-                      padding: 10px;
-                      background-color: #022438;
-                      border-radius: 4px;
-                      margin-bottom: 10px;
-                      color: #c2c1c4;
-                  }
+
+        .description {
+            display: flex;
+            margin: 25px;
+            width: 40%;
+            max-width: 50%;
+            background: #ffffff;
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+        }
+           
 
 
-                #particles-js {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -2;
-                    }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
 
 
         /*PROJECT SECTION*/
@@ -245,24 +240,24 @@ a:hover {
             align-items: center;
         }
 
-                @keyframes bounce {
+        @keyframes bounce {
         
-                    0%,
-                    20%,
-                    50%,
-                    80%,
-                    100% {
-                        transform: translateY(0);
-                    }
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+             transform: translateY(0);
+            }
         
-                    40% {
-                        transform: translateY(-20px);
-                    }
+            40% {
+            transform: translateY(-20px);
+            }
         
-                    60% {
-                        transform: translateY(-10px);
-                    }
-                }
+            60% {
+            transform: translateY(-10px);
+        }
+     }
 
 
                 .intro {
@@ -307,7 +302,7 @@ a:hover {
         /* Mobile */
 
                 
-                @media only screen and (max-width: 768px) {
+                @media only screen and (max-width: 480px) {
                     body {
                         font-size: 14px;
                     }
