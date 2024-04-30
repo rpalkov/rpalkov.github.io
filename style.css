@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-    color: #555;
+    color: #6f13c5;
 }
 
 /*LOGO*/
@@ -204,41 +204,46 @@ a:hover {
 
 
         /*PROJECT SECTION*/
+                .project_title {
+                    display: flex;
+                    margin: 0 auto;
+                    justify-content: center;
+                    padding-top: 10%;
+                    font-size: 2rem;
+                }
+        
+                #projects {
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    height: 50vh;
+                }
+        
+                .project_container {
+                    
+                }
+        
+                .project {
+                    margin-top: 20px;
+                    /* Adjust spacing between projects */
+                }
+                .project_titles{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
+        
+                .project_icons{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
 
-        .project_title {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            padding-top: 10%;;
-            font-size: 2rem;
-
-        }
-
-        #projects {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            height: 50vh;
-        }
-
-        .project_titles {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            align-items: center;
-            max-width: 75%;
-            
-        }
-        .project_icons {
-            display: flex;
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            justify-content: space-between;
-            margin: 0 auto;
-            align-items: center;
-        }
+                 
+                
 
         @keyframes bounce {
         
@@ -280,16 +285,17 @@ a:hover {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 15vh;
+                    height: 10vh;
                     }
                 
                 
-                #contact_info .social-links a {
+                #contact_info .social-links a .img{
                     display: inline-block;
                     margin: 0 10px;
                     text-decoration: none;
                     color: #333;
                     font-size: 1.5em;
+                    height: 5%;
                     }
                 
                 #contact_info .social-links a:hover {
@@ -348,7 +354,7 @@ a:hover {
                     }
         
                     #projects {
-                        width: 100%;
+                        width: 80%;
                         margin-top: 120%;
                         align-items: center;
                     }
@@ -359,8 +365,8 @@ a:hover {
                         text-align: center;
                     }
                     .project_icons {
-                        max-width: 100%;
-                        width: 75%;
+                        max-width: 80%;
+                        width: 65%;
                         display: flex;;
                     }
 
